@@ -3,7 +3,7 @@ package com.joka.mustdeletedservice;
 public class SearchInRotatedSortedArrayMedium {
 
     public static void main(String[] args) {
-        int[] nums = {2,2,2,3,2,2,2};
+        int[] nums = {2,2,2,3,2,5,2};
         SearchInRotatedSortedArrayMedium searchInRotatedSortedArrayMedium = new SearchInRotatedSortedArrayMedium();
         System.out.println(searchInRotatedSortedArrayMedium.search(nums, 3));
     }
@@ -31,7 +31,7 @@ public class SearchInRotatedSortedArrayMedium {
         }
         return 0;
     }
-
+	//binarySearch
     public boolean searchNumber(int target, int[] nums, int prevIndex, int nextIndex) {
         int middleIndex = (prevIndex + nextIndex) / 2;
 
